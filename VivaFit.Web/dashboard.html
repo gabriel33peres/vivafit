@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VivaFit Web | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html" aria-label="VivaFit - Dashboard">
+        <span class="brand-icon" aria-hidden="true">VF</span>
+        <span>VivaFit</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="planos.html">Planos</a>
+        <a href="matriculas.html">Matrículas</a>
+      </nav>
+
+      <button id="logout-button" class="button button-ghost sidebar-logout" type="button">Sair</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Visão geral</p>
+          <h1>VivaFit Academia</h1>
+        </div>
+        <button id="mobile-logout" class="button button-outline" type="button">Sair</button>
+      </header>
+
+      <section class="welcome-panel" aria-labelledby="welcome-title">
+        <div>
+          <p class="eyebrow">Bem-vindo ao seu painel</p>
+          <h2 id="welcome-title">Gestão simples, resultados melhores.</h2>
+          <p class="muted">Acompanhe os principais indicadores da VivaFit.</p>
+        </div>
+        <div class="pulse-icon" aria-hidden="true">✦</div>
+      </section>
+
+      <section class="stats-grid" aria-label="Indicadores">
+        <article class="stat-card">
+          <span class="stat-label">Alunos</span>
+          <strong id="total-alunos">—</strong>
+          <span class="stat-note">cadastros ativos</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Planos</span>
+          <strong id="total-planos">—</strong>
+          <span class="stat-note">planos disponíveis</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Matrículas</span>
+          <strong id="total-matriculas">—</strong>
+          <span class="stat-note">registros realizados</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Pagamentos</span>
+          <strong id="total-pagamentos">—</strong>
+          <span class="stat-note">lançamentos no sistema</span>
+        </article>
+      </section>
+
+      <section class="content-card" aria-labelledby="quick-access-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Acesso rápido</p>
+            <h2 id="quick-access-title">Gerencie sua academia</h2>
+          </div>
+        </div>
+        <div class="quick-links">
+          <a href="alunos.html">Cadastrar e consultar alunos <span aria-hidden="true">→</span></a>
+          <a href="planos.html">Visualizar planos <span aria-hidden="true">→</span></a>
+          <a href="matriculas.html">Acompanhar matrículas <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <footer class="site-footer">VivaFit Web · </footer>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

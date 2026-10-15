@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VivaFit Web | Matrículas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="matriculas">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html" aria-label="VivaFit - Dashboard"><span class="brand-icon" aria-hidden="true">VF</span><span>VivaFit</span></a>
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a href="dashboard.html">Dashboard</a><a href="alunos.html">Alunos</a><a href="planos.html">Planos</a><a class="active" href="matriculas.html">Matrículas</a>
+      </nav>
+      <button id="logout-button" class="button button-ghost sidebar-logout" type="button">Sair</button>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div><p class="eyebrow">Gestão</p><h1>Matrículas</h1></div><button id="mobile-logout" class="button button-outline" type="button">Sair</button></header>
+      <div id="page-message" class="message" role="alert"></div>
+      <section class="content-card" aria-labelledby="enrollments-title">
+        <div class="section-heading"><div><p class="eyebrow">Alunos e planos</p><h2 id="enrollments-title">Matrículas registradas</h2></div><button id="refresh-matriculas" class="button button-outline" type="button">Atualizar</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Aluno</th><th>Plano</th><th>Data de início</th><th>Data de fim</th><th>Status</th></tr></thead><tbody id="matriculas-table"><tr><td colspan="5" class="empty-state">Carregando matrículas...</td></tr></tbody></table></div>
+      </section>
+      <footer class="site-footer">VivaFit Web · Projeto acadêmico PIM IV</footer>
+    </main>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/matriculas.js"></script>
+</body>
+</html>
